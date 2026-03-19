@@ -1,3 +1,6 @@
+# This bot works with Hack Club AI. You can make an account here: https://ai.hackclub.com/
+# When the bot deletes messages he shouldt, you can always edit the system prompt.
+
 import os
 import json
 import asyncio
@@ -154,6 +157,5 @@ async def on_message(message: discord.Message):
         print(f"Oh no! Something went wrong. Error: {e}")
 
     await bot.process_commands(message)
-
 
 bot.run(TOKEN)
