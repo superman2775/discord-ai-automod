@@ -137,7 +137,6 @@ async def on_message(message: discord.Message):
                 ),
                 color=0xFF0000,
             )
-            log_embed.add_field(name="Context", value=context_text[:1000], inline=False)
 
             await message.channel.send(embed=log_embed)
 
